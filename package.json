@@ -3,6 +3,7 @@
   "version": "4.0.0",
   "description": "A better IRC framework for node.js",
   "main": "index.js",
+  "browser": "index_browser.js",
   "dependencies": {
     "eventemitter3": "^2.0.2",
     "iconv-lite": "^0.4.11",

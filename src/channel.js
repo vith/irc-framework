@@ -1,5 +1,3 @@
-'use strict';
-
 var _ = {
     partial: require('lodash/partial'),
     filter: require('lodash/filter'),
@@ -11,7 +9,7 @@ var _ = {
 
 var DuplexStream = require('stream').Duplex;
 
-module.exports = class IrcChannel {
+export default class IrcChannel {
     constructor(irc_client, channel_name, key) {
         this.irc_client = irc_client;
         this.name = channel_name;

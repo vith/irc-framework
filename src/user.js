@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = class User {
+export default class User {
     constructor(opts) {
         opts = opts || {};
 

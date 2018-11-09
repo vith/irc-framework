@@ -19,7 +19,7 @@ var Channel = require('./channel');
 
 var default_transport = null;
 
-module.exports = class IrcClient extends EventEmitter {
+export default class IrcClient extends EventEmitter {
     constructor(options) {
         super();
 

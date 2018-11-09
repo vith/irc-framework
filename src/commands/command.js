@@ -4,7 +4,7 @@ var _ = {
     clone: require('lodash/clone'),
 };
 
-module.exports = class IrcCommand {
+export default class IrcCommand {
     constructor(command, data) {
         this.command = command += '';
         this.params = _.clone(data.params);

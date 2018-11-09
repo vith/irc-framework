@@ -1,6 +1,6 @@
-let MessageTags = require('./messagetags');
+import MessageTags from './messagetags';
 
-module.exports = class IrcMessage {
+export default class IrcMessage {
     constructor(command, ...args) {
         this.tags = Object.create(null);
         this.prefix = '';

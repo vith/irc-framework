@@ -9,7 +9,7 @@ var EventEmitter = require('eventemitter3');
 var irc_numerics = require('./numerics');
 var IrcCommand = require('./command');
 
-module.exports = class IrcCommandHandler extends EventEmitter {
+export default class IrcCommandHandler extends EventEmitter {
     constructor(connection, network_info) {
         super();
 

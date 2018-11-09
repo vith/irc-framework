@@ -1,8 +1,4 @@
-'use strict';
-
-module.exports = NetworkInfo;
-
-function NetworkInfo() {
+export default function NetworkInfo() {
     // Name of the network
     this.name = 'Network';
 

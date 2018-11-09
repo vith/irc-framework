@@ -143,7 +143,7 @@ var handlers = {
     }
 };
 
-module.exports = function AddCommandHandlers(command_controller) {
+export default function AddCommandHandlers(command_controller) {
     _.each(handlers, function(handler, handler_command) {
         command_controller.addHandler(handler_command, handler);
     });

@@ -1,11 +1,9 @@
 'use strict';
 
-const Helpers = require('./helpers');
+import Helpers from './helpers';
 
-module.exports.decodeValue = decodeValue;
-module.exports.encodeValue = encodeValue;
-module.exports.decode = decode;
-module.exports.encode = encode;
+const MessageTags = { decodeValue, encodeValue, decode, encode };
+export default MessageTags;
 
 const tokens_map = {
     '\\\\': '\\',

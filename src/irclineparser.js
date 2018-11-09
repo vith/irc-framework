@@ -3,8 +3,6 @@
 var MessageTags = require('./messagetags');
 var IrcMessage = require('./ircmessage');
 
-module.exports = parseIrcLine;
-
 /**
  * The regex that parses a line of data from the IRCd
  * Deviates from the RFC a little to support the '/' character now used in some
@@ -13,7 +11,7 @@ module.exports = parseIrcLine;
 var parse_regex = /^(?:@([^ ]+) )?(?::((?:(?:([^\s!@]+)(?:!([^\s@]+))?)@)?(\S+)) )?((?:[a-zA-Z]+)|(?:[0-9]{3}))(?: ([^:].*?))?(?: :(.*))?$/i;
 var newline_regex = /^[\r\n]+|[\r\n]+$/g;
 
-function parseIrcLine(line) {
+export default function parseIrcLine(line) {
     // Parse the complete line, removing any carriage returns
     let matches = parse_regex.exec(line.replace(newline_regex, ''));
     if (!matches) {

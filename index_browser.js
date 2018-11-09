@@ -1,11 +1,14 @@
-'use strict';
-
 /**
  * The default irc-framework interface for browsers
  * Usage: var IrcFramework = require('irc-framework/browser');
  */
 
-module.exports.Client = require('./src/client');
-module.exports.Client.setDefaultTransport(require('./src/transports/websocket'));
+import Client from './src/client';
+import WebSocketTransport from './src/transports/websocket';
+import ircLineParser from './src/irclineparser';
+import Message from './src/ircmessage';
+import Channel from './src/channel';
 
-module.exports.ircLineParser = require('./src/irclineparser');
+Client.setDefaultTransport(WebSocketTransport);
+
+export { Client, ircLineParser, Message, Channel };

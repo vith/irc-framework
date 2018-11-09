@@ -5,7 +5,7 @@ var Helper = {
 	splitOnce: splitOnce,
 };
 
-module.exports = Helper;
+export default Helper;
 
 function parseMask(mask) {
 	var nick = '';

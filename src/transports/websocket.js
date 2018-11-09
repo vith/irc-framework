@@ -9,7 +9,7 @@ var _ = {
 };
 var EventEmitter = require('eventemitter3');
 
-module.exports = class Connection extends EventEmitter {
+export default class Connection extends EventEmitter {
     constructor(options) {
         super();
 
