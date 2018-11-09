@@ -2,14 +2,15 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
+  // mode: 'production',
   entry: { main: './index_browser.js' },
   output: {
     path: path.resolve(__dirname),
     filename: 'browser.js',
-    library: 'irc-framework',
-    libraryTarget: 'umd',
-    umdNamedDefine: true
+    // library: 'irc-framework',
+    // libraryTarget: 'commonjs2',
+    // umdNamedDefine: true
   },
   module: {
     rules: [
@@ -23,6 +24,7 @@ module.exports = {
   },
   plugins: [ ],
   optimization: {
-    minimize: true
-  }
+    minimize: false
+  },
+  devtool: 'source-map'
 };
