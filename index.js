@@ -10,3 +10,5 @@ module.exports.Client.setDefaultTransport(require('./src/transports/default'));
 
 module.exports.ircLineParser = require('./src/irclineparser');
 module.exports.Message = require('./src/ircmessage');
+
+module.exports.Channel = require('./src/channel');
