@@ -2,7 +2,7 @@
   "name": "irc-framework",
   "version": "4.2.0",
   "description": "A better IRC framework for node.js",
-  "main": "index.js",
+  "main": "./src",
   "browser": {
     "./src/transports/default.js": "./src/transports/default_browser.js"
   },
@@ -15,9 +15,10 @@
     "socksjs": "^0.5.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
     "chai": "^3.4.1",
     "chai-subset": "^1.2.0",
     "istanbul": "^0.4.1",
